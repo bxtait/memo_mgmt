@@ -1,0 +1,239 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: memo_mgmt1
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target memo_mgmt1
+
+
+#############################################
+# Order-only phony target for memo_mgmt1
+
+build cmake_object_order_depends_target_memo_mgmt1: phony || memo_mgmt1_autogen memo_mgmt1_autogen/mocs_compilation.cpp memo_mgmt1_autogen/timestamp memo_mgmt1_autogen_timestamp_deps
+
+build CMakeFiles/memo_mgmt1.dir/memo_mgmt1_autogen/mocs_compilation.cpp.o: CXX_COMPILER__memo_mgmt1_Debug /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/memo_mgmt1_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_memo_mgmt1
+  DEFINES = -DQT_CORE_LIB
+  DEP_FILE = CMakeFiles/memo_mgmt1.dir/memo_mgmt1_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.0 -std=gnu++17
+  INCLUDES = -I/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug -I/Users/briartait/Documents/GitHub_Projects/memo_mgmt/memo_mgmt1 -I/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/memo_mgmt1_autogen/include -isystem /Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers -iframework /Users/briartait/Qt/6.3.2/macos/lib -isystem /Users/briartait/Qt/6.3.2/macos/mkspecs/macx-clang -isystem /Users/briartait/Qt/6.3.2/macos/include
+  OBJECT_DIR = CMakeFiles/memo_mgmt1.dir
+  OBJECT_FILE_DIR = CMakeFiles/memo_mgmt1.dir/memo_mgmt1_autogen
+  TARGET_COMPILE_PDB = CMakeFiles/memo_mgmt1.dir/
+  TARGET_PDB = memo_mgmt1.pdb
+
+build CMakeFiles/memo_mgmt1.dir/main.cpp.o: CXX_COMPILER__memo_mgmt1_Debug /Users/briartait/Documents/GitHub_Projects/memo_mgmt/memo_mgmt1/main.cpp || cmake_object_order_depends_target_memo_mgmt1
+  DEFINES = -DQT_CORE_LIB
+  DEP_FILE = CMakeFiles/memo_mgmt1.dir/main.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.0 -std=gnu++17
+  INCLUDES = -I/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug -I/Users/briartait/Documents/GitHub_Projects/memo_mgmt/memo_mgmt1 -I/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/memo_mgmt1_autogen/include -isystem /Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers -iframework /Users/briartait/Qt/6.3.2/macos/lib -isystem /Users/briartait/Qt/6.3.2/macos/mkspecs/macx-clang -isystem /Users/briartait/Qt/6.3.2/macos/include
+  OBJECT_DIR = CMakeFiles/memo_mgmt1.dir
+  OBJECT_FILE_DIR = CMakeFiles/memo_mgmt1.dir
+  TARGET_COMPILE_PDB = CMakeFiles/memo_mgmt1.dir/
+  TARGET_PDB = memo_mgmt1.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target memo_mgmt1
+
+
+#############################################
+# Link the executable memo_mgmt1
+
+build memo_mgmt1: CXX_EXECUTABLE_LINKER__memo_mgmt1_Debug CMakeFiles/memo_mgmt1.dir/memo_mgmt1_autogen/mocs_compilation.cpp.o CMakeFiles/memo_mgmt1.dir/main.cpp.o | /Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Versions/A/QtCore || memo_mgmt1_autogen memo_mgmt1_autogen_timestamp_deps
+  FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.0
+  LINK_LIBRARIES = -Wl,-rpath,/Users/briartait/Qt/6.3.2/macos/lib  /Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration
+  OBJECT_DIR = CMakeFiles/memo_mgmt1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/memo_mgmt1.dir/
+  TARGET_FILE = memo_mgmt1
+  TARGET_PDB = memo_mgmt1.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug && /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/bin/ccmake -S/Users/briartait/Documents/GitHub_Projects/memo_mgmt/memo_mgmt1 -B/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug && /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/bin/cmake --regenerate-during-build -S/Users/briartait/Documents/GitHub_Projects/memo_mgmt/memo_mgmt1 -B/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug && /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug && /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug && /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for memo_mgmt1_autogen_timestamp_deps
+
+build memo_mgmt1_autogen_timestamp_deps: phony CMakeFiles/memo_mgmt1_autogen_timestamp_deps
+
+
+#############################################
+# Utility command for memo_mgmt1_autogen
+
+build memo_mgmt1_autogen: phony CMakeFiles/memo_mgmt1_autogen memo_mgmt1_autogen/timestamp memo_mgmt1_autogen/mocs_compilation.cpp memo_mgmt1_autogen_timestamp_deps
+
+
+#############################################
+# Custom command for memo_mgmt1_autogen/timestamp
+
+build memo_mgmt1_autogen/timestamp memo_mgmt1_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}memo_mgmt1_autogen/timestamp ${cmake_ninja_workdir}memo_mgmt1_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /Users/briartait/Qt/6.3.2/macos/./libexec/moc || memo_mgmt1_autogen_timestamp_deps
+  COMMAND = cd /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug && /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_autogen /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/CMakeFiles/memo_mgmt1_autogen.dir/AutogenInfo.json Debug && /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E touch /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/memo_mgmt1_autogen/timestamp && /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /Users/briartait/Documents/GitHub_Projects/memo_mgmt/memo_mgmt1 /Users/briartait/Documents/GitHub_Projects/memo_mgmt/memo_mgmt1 /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/memo_mgmt1_autogen/deps /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/CMakeFiles/d/4fb8e2e178f5fd73ee31a63717c9f87badfc14f44c06b38e0665dabdf142d91a.d
+  DESC = Automatic MOC and UIC for target memo_mgmt1
+  depfile = /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/CMakeFiles/d/4fb8e2e178f5fd73ee31a63717c9f87badfc14f44c06b38e0665dabdf142d91a.d
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/memo_mgmt1_autogen_timestamp_deps
+
+build CMakeFiles/memo_mgmt1_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/memo_mgmt1_autogen_timestamp_deps: phony /Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Versions/A/QtCore /Users/briartait/Qt/6.3.2/macos/./libexec/moc
+
+
+#############################################
+# Phony custom command for CMakeFiles/memo_mgmt1_autogen
+
+build CMakeFiles/memo_mgmt1_autogen | ${cmake_ninja_workdir}CMakeFiles/memo_mgmt1_autogen: phony memo_mgmt1_autogen/timestamp || memo_mgmt1_autogen_timestamp_deps
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug
+
+build all: phony memo_mgmt1
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Users/briartait/Documents/GitHub_Projects/memo_mgmt/memo_mgmt1/CMakeLists.txt /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/FindWrapAtomic.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6Config.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6ConfigExtras.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6ConfigVersion.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6Dependencies.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6Targets.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6VersionlessTargets.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtFeature.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtFeatureCommon.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicPluginHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicTargetHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreMacros.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake /Users/briartait/Qt/Qt$ Creator.app/Contents/Resources/package-manager/auto-setup.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeFindDependencyMacro.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeNinjaFindMake.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseArguments.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystem.cmake.in /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckCXXCompilerFlag.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFile.cxx.in /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckLibraryExists.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/FindPackageMessage.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/FindThreads.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/GNUInstallDirs.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/CheckCompilerFlag.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/CheckFlagCommonConfig.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin-Determine-CXX.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Users/briartait/Documents/GitHub_Projects/memo_mgmt/memo_mgmt1/CMakeLists.txt /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/FindWrapAtomic.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6Config.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6ConfigExtras.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6ConfigVersion.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6Dependencies.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6Targets.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/Qt6VersionlessTargets.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtFeature.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtFeatureCommon.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicPluginHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicTargetHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreMacros.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake /Users/briartait/Qt/6.3.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake /Users/briartait/Qt/Qt$ Creator.app/Contents/Resources/package-manager/auto-setup.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeFindDependencyMacro.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeNinjaFindMake.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseArguments.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystem.cmake.in /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckCXXCompilerFlag.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFile.cxx.in /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CheckLibraryExists.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/FindPackageMessage.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/FindThreads.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/GNUInstallDirs.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/CheckCompilerFlag.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/CheckFlagCommonConfig.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin-Determine-CXX.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/briartait/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean additional files.
+
+build CMakeFiles/clean.additional: CLEAN_ADDITIONAL
+  CONFIG = Debug
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN CMakeFiles/clean.additional
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

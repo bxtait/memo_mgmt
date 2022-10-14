@@ -1,0 +1,8 @@
+# ninja log v5
+0	272	1665705908901705625	memo_mgmt1_autogen/timestamp	95b78a585cd1aa5a
+0	272	1665705908901705625	memo_mgmt1_autogen/mocs_compilation.cpp	95b78a585cd1aa5a
+0	272	1665705908901705625	/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/memo_mgmt1_autogen/timestamp	95b78a585cd1aa5a
+0	272	1665705908901705625	/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/memo_mgmt1_autogen/mocs_compilation.cpp	95b78a585cd1aa5a
+272	337	1665705908968406138	CMakeFiles/memo_mgmt1.dir/memo_mgmt1_autogen/mocs_compilation.cpp.o	a16cce78c45f69fc
+272	961	1665705909593350701	CMakeFiles/memo_mgmt1.dir/main.cpp.o	cc299955514b87ad
+962	1018	1665705909652614409	memo_mgmt1	d07e97ff785cb7b2

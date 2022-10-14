@@ -1,0 +1,9 @@
+/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/CMakeFiles/memo_mgmt1.dir
+/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/CMakeFiles/list_install_components.dir
+/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/CMakeFiles/install.dir
+/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/CMakeFiles/install/local.dir
+/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/CMakeFiles/install/strip.dir
+/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/CMakeFiles/memo_mgmt1_autogen_timestamp_deps.dir
+/Users/briartait/Documents/GitHub_Projects/memo_mgmt/build-memo_mgmt1-Qt_6_3_2_for_macOS-Debug/CMakeFiles/memo_mgmt1_autogen.dir
